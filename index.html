@@ -3,7 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DEMO: Pig Game</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="game-container">
+      <h1>Pig Game</h1>
+      <div class="player player-0 active">
+        <h2>Player 1</h2>
+        <p>Total Score: <span class="player-0-score">0</span></p>
+        <p>Current Score: <span class="player-0-current">0</span></p>
+      </div>
+      <div class="player player-1">
+        <h2>Player 2</h2>
+        <p>Total Score: <span class="player-1-score">0</span></p>
+        <p>Current Score: <span class="player-1-current">0</span></p>
+      </div>
+      <div>
+        <img src="icons8-dice-1.png" alt="Dice" class="dice-img" />
+      </div>
+      <div class="controls">
+        <button class="btn-roll">Roll Dice</button>
+        <button class="btn-hold">Hold</button>
+        <button class="btn-new">New Game</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
