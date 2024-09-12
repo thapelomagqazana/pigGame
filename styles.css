@@ -99,9 +99,17 @@ button:hover {
 }
 
 /* Pixelated Dice Display */
+.dice-img {
+  display: none; /* Hide by default */
+  margin: 10px auto;
+  width: 100px; /* Adjust width for a pixelated look */
+  height: 100px; /* Maintain square aspect ratio */
+  image-rendering: pixelated; /* Pixelated effect for retro theme */
+}
+
+/* Show the dice when active */
 .dice-img.active {
   display: block; /* Show when active */
-  margin: 10px auto;
   animation: rollDice 1s infinite; /* Simple animation */
 }
 
